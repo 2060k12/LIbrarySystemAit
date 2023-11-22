@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D9FDEA6-5926-49D9-99CC-D11568E8BACA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms.Designer.cs">
+      <DependentUpon>AdminForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveBorrowForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveBorrowForms.Designer.cs">
+      <DependentUpon>ApproveBorrowForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayUserNameComboBox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DisplayUserNameComboBox.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementForms.Designer.cs">
+      <DependentUpon>ManagementForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBookForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBookForms.Designer.cs">
+      <DependentUpon>ReturnBookForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms.Designer.cs">
+      <DependentUpon>UserForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminForms.resx">
+      <DependentUpon>AdminForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveBorrowForms.resx">
+      <DependentUpon>ApproveBorrowForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementForms.resx">
+      <DependentUpon>ManagementForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBookForms.resx">
+      <DependentUpon>ReturnBookForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms.resx">
+      <DependentUpon>UserForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DisplayUserNameComboBox.xsc">
+      <DependentUpon>DisplayUserNameComboBox.xsd</DependentUpon>
+    </None>
+    <None Include="DisplayUserNameComboBox.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DisplayUserNameComboBox.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DisplayUserNameComboBox.xss">
+      <DependentUpon>DisplayUserNameComboBox.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{ffaa1c95-1263-415a-ba1a-6aaf99624328}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7d92897e-3169-4ed2-9377-4a251ad70550}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
